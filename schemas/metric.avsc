@@ -4,9 +4,9 @@
     "name": "Metric",
     "doc:" : "A basic schema for representing Prometheus metrics",
     "fields": [
-        {"name": "timestamp", "type": "string", "order": "ignore"},
-        {"name": "value", "type": "string", "order": "ignore"},
-        {"name": "name", "type": "string", "order": "ignore"},
-        {"name": "labels", "type": { "type": "map", "values": "string"}, "order": "ignore" }
+        {"name": "timestamp", "type": "string"},
+        {"name": "value", "type": "string"},
+        {"name": "name", "type": "string"},
+        {"name": "labels", "type": { "type": "map", "values": "string"}}
     ]
 }
