@@ -1,6 +1,6 @@
 {
     "namespace": "io.prometheus",
-    "type": "map",
+    "type": "string",
     "name": "Metric",
     "doc:" : "A basic schema for representing Prometheus metrics",
     "fields": [
