@@ -1,12 +1,13 @@
 {
     "namespace": "io.prometheus",
-    "type": "string",
+    "type": "record",
     "name": "Metric",
     "doc:" : "A basic schema for representing Prometheus metrics",
+    "order": "ascending",
     "fields": [
-        {"name": "timestamp", "type": "string", "order": "ignore"},
-        {"name": "value", "type": "string", "order": "ignore"},
-        {"name": "name", "type": "string", "order": "ignore"},
-        {"name": "labels", "type": { "type": "map", "values": "string"}, "order": "ignore" }
+        {"name": "timestamp", "type": "string", "order": "ascending"},
+        {"name": "value", "type": "string", "order": "ascending"},
+        {"name": "name", "type": "string", "order": "ascending"},
+        {"name": "labels", "type": { "type": "map", "values": "string"}, "order": "ascending" }
     ]
 }
