@@ -132,13 +132,13 @@ func parseLogLevel(value string) logrus.Level {
 
 func parseSerializationFormat(value string) (Serializer, error) {
 	switch value {
-	case "json":
-		return NewJSONSerializer()
+	//case "json":
+	//	return NewJSONSerializer()
 	case "avro-json":
 		return NewAvroJSONSerializer("schemas/metric.avsc")
 	default:
 		logrus.WithField("serialization-format-value", value).Warningln("invalid serialization format, using json")
-		return NewJSONSerializer()
+		return NewAvroJSONSerializer("schemas/metric.avsc")
 	}
 }
 
